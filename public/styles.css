@@ -1,0 +1,19 @@
+:root {
+  --primaryH: 215;
+  --primaryS: 50%;
+  --primaryL: 40%;
+  --primary-bg: #ffffff;
+  --secondaryH: 0;
+  --secondaryS: 0%;
+  --secondaryL: 13%;
+  --secondary-bg: #ffffff;
+  --font-family: Roboto, Helvetica, Arial, sans-serif;
+  --font-size-root: 16px;
+  --font-weight-thin: 100;
+  --font-weight-normal: 200;
+  --font-weight-bold: 400;
+  --font-weight-bolder: 700;
+  --line-height: 1.75rem;
+  --heading-margin: 1.5rem 0 1rem;
+  --border-radius: 2px;
+}
