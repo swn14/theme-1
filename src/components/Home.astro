@@ -6,7 +6,8 @@
   <section class="hero">
     <h1>Welcome to Your Amazing Site</h1>
     <p class="hero-subtitle">
-      Built with Astro and styled with Almond.css for a clean, modern experience.
+      Built with Astro and styled with Almond.css for a clean, modern
+      experience.
     </p>
     <div class="cta-buttons">
       <button class="primary">Get Started</button>
@@ -35,8 +36,9 @@
   <section class="about">
     <h2>About This Project</h2>
     <p>
-      This is a sample home page demonstrating how to structure content in Astro components.
-      The design uses CSS custom properties for theming and Almond.css for base styling.
+      This is a sample home page demonstrating how to structure content in Astro
+      components. The design uses CSS custom properties for theming and
+      Almond.css for base styling.
     </p>
     <blockquote>
       "The best way to predict the future is to create it."
@@ -97,7 +99,11 @@
   }
 
   .cta-buttons .primary:hover {
-    background-color: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) - 10%));
+    background-color: hsl(
+      var(--primaryH),
+      var(--primaryS),
+      calc(var(--primaryL) - 10%)
+    );
   }
 
   .cta-buttons .secondary {
@@ -157,13 +163,18 @@
     line-height: var(--line-height);
     max-width: 800px;
     margin: 0 auto 2rem;
-    color: hsl(var(--secondaryH), var(--secondaryS), calc(var(--secondaryL) + 20%));
+    color: hsl(
+      var(--secondaryH),
+      var(--secondaryS),
+      calc(var(--secondaryL) + 20%)
+    );
   }
 
   blockquote {
     font-style: italic;
     font-size: 1.2rem;
-    border-left: 4px solid hsl(var(--primaryH), var(--primaryS), var(--primaryL));
+    border-left: 4px solid
+      hsl(var(--primaryH), var(--primaryS), var(--primaryL));
     padding-left: 1.5rem;
     margin: 2rem auto;
     max-width: 600px;
@@ -173,35 +184,39 @@
     display: block;
     margin-top: 1rem;
     font-size: 0.9rem;
-    color: hsl(var(--secondaryH), var(--secondaryS), calc(var(--secondaryL) + 30%));
+    color: hsl(
+      var(--secondaryH),
+      var(--secondaryS),
+      calc(var(--secondaryL) + 30%)
+    );
   }
 
   @media (max-width: 768px) {
     .hero h1 {
       font-size: 2rem;
     }
-    
+
     .hero-subtitle {
       font-size: 1rem;
     }
-    
+
     .cta-buttons {
       flex-direction: column;
       align-items: center;
     }
-    
+
     .cta-buttons button {
       width: 200px;
     }
-    
+
     main {
       padding: 1rem;
     }
-    
+
     .hero {
       padding: 2rem 1rem;
     }
-    
+
     .about {
       padding: 2rem 1rem;
     }
