@@ -1,51 +1,79 @@
 ---
-// Home.astro - Main home page content component
+import Footer from "../components/Footer.astro";
+import TopNav from "../components/TopNav.astro";
 ---
 
-<main>
-  <section class="hero">
-    <h1>Welcome to Your Amazing Site</h1>
-    <p class="hero-subtitle">
-      Built with Astro and styled with Almond.css for a clean, modern
-      experience.
-    </p>
-    <div class="cta-buttons">
-      <button class="primary">Get Started</button>
-      <button class="secondary">Learn More</button>
-    </div>
-  </section>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- loads all the styles (including icons and images) from jsDelivr -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/alvaromontoro/almond.css@latest/dist/almond.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <section>
+      <TopNav />
+    </section>
+    <section>
+      <main>
+        <section class="hero">
+          <h1>Welcome to Your Amazing Site</h1>
+          <p class="hero-subtitle">
+            Built with Astro and styled with Almond.css for a clean, modern
+            experience.
+          </p>
+          <div class="cta-buttons">
+            <button class="primary">Get Started</button>
+            <button class="secondary">Learn More</button>
+          </div>
+        </section>
 
-  <section class="features">
-    <h2>Features</h2>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>🚀 Fast</h3>
-        <p>Lightning-fast performance with Astro's static site generation.</p>
-      </div>
-      <div class="feature-card">
-        <h3>🎨 Beautiful</h3>
-        <p>Clean, accessible design with Almond.css framework.</p>
-      </div>
-      <div class="feature-card">
-        <h3>📱 Responsive</h3>
-        <p>Looks great on desktop, tablet, and mobile devices.</p>
-      </div>
-    </div>
-  </section>
+        <section class="features">
+          <h2>Features</h2>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h3>🚀 Fast</h3>
+              <p>
+                Lightning-fast performance with Astro's static site generation.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>🎨 Beautiful</h3>
+              <p>Clean, accessible design with Almond.css framework.</p>
+            </div>
+            <div class="feature-card">
+              <h3>📱 Responsive</h3>
+              <p>Looks great on desktop, tablet, and mobile devices.</p>
+            </div>
+          </div>
+        </section>
 
-  <section class="about">
-    <h2>About This Project</h2>
-    <p>
-      This is a sample home page demonstrating how to structure content in Astro
-      components. The design uses CSS custom properties for theming and
-      Almond.css for base styling.
-    </p>
-    <blockquote>
-      "The best way to predict the future is to create it."
-      <cite>— Peter Drucker</cite>
-    </blockquote>
-  </section>
-</main>
+        <section class="about">
+          <h2>About This Project</h2>
+          <p>
+            This is a sample home page demonstrating how to structure content in
+            Astro components. The design uses CSS custom properties for theming
+            and Almond.css for base styling.
+          </p>
+          <blockquote>
+            "The best way to predict the future is to create it."
+            <cite>— Peter Drucker</cite>
+          </blockquote>
+        </section>
+      </main>
+    </section>
+    <section>
+      <Footer />
+    </section>
+  </body>
+</html>
 
 <style>
   main {

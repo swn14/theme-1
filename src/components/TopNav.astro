@@ -1,15 +1,27 @@
 <header>
-  <ul>
-    <li><button>Home</button></li>
-    <li><button>About</button></li>
-    <li><button>Contact</button></li>
-  </ul>
+  <nav>
+    <ul>
+      <li><a href="/"><button>Home</button></a></li>
+      <li><a href="/about"><button>About</button></a></li>
+      <li><a href="/contact"><button>Contact</button></a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav">
+    <div>
+      <a href="/"><button>Home</button></a>
+      <a href="/about"><button>About</button></a>
+      <a href="/contact"><button>Contact</button></a>
+    </div>
+  </div>
 </header>
 
 <style>
   header {
     background-color: var(--primary);
-    /* padding: 1rem; */
+  }
+
+  nav {
+    display: none;
   }
 
   ul {
@@ -22,5 +34,26 @@
 
   li {
     margin: 0;
+  }
+
+  .mobile-nav > div {
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: var(--primary);
+  }
+
+  .mobile-nav a,
+  .mobile-nav button {
+    width: 100%;
+  }
+
+  /* Styles for screens wider than 768px (tablets and up) */
+  @media screen and (min-width: 768px) {
+    nav {
+      display: block;
+    }
+    .mobile-nav {
+      display: none;
+    }
   }
 </style>
